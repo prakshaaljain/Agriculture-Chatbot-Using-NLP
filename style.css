@@ -1,0 +1,63 @@
+/* Custom CSS for Chatbot Interface */
+
+/* General Styles */
+.chat-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    max-width: 80%; /* Limit message width */
+    word-wrap: break-word; /* Wrap long words */
+}
+
+.user-message {
+    background-color: #007bff;
+    color: #fff;
+    text-align: right;
+    margin-left: auto; /* Push user message to the right */
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: left;
+    margin-right: auto; /* Push bot message to the left */
+}
+
+/* Input Form Styles */
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border-radius: 25px;
+}
+
+.btn-primary {
+    border-radius: 25px;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.message {
+    animation: fadeIn 0.5s ease; /* Apply fade-in animation to messages */
+}
