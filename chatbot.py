@@ -16,7 +16,7 @@ from keras.utils import np_utils
 from keras.models import load_model
 
 app = Flask(__name__)
-
+ 
 # Load intents JSON
 with open('datasets/intents.json') as json_data:
     intents = json.load(json_data)
